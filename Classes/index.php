@@ -16,6 +16,7 @@
             <input type="text" name = "email"><br><br>
             <button name ="btn">Submit </button>
         </form>
+        <a href="">Click here to see all data</a>
     </main>
 </body>
 </html>
@@ -27,7 +28,7 @@
         $reg = $_POST["reg"];
         $email = $_POST["email"];
 
-        $query_insertion = "INSERT INTO `student_details`(`roll`, `reg. no.`, `email`) VALUES ('$roll', '$reg' ,'$email')";
-         $execute = mysqli_query( $con, $query_insertion); 
+        $query_insertion = "INSERT INTO `details`(`Roll`, `Reg`, `Email`) VALUES ('$roll','$reg','$email')";
+        $exe = mysqli_query($con, $query_insertion);
     }
 ?>
