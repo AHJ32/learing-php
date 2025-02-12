@@ -1,8 +1,16 @@
-<?php 
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "anamul";
+<?php
+$server = "localhost";
+$user = "root";
+$password = "";
+$database = "auth";
 
-    $con = mysqli_connect($server, $username, $password, $database);
- ?>
+$con = mysqli_connect($server, $user, $password, $database);
+
+//This ensures the connection
+// if ($con = true) {
+//     echo "ok";
+
+    
+// }
+?>
+
